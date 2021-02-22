@@ -1,14 +1,18 @@
 import React from 'react';
-import { ExperienceBar } from './components/ExperienceBar';
-import './styles/global.css';
+import  ExperienceBar  from './components/ExperienceBar';
+import Routes from './routes';
+
+import GlobalStyle from './styles/global';
 
 
-function App() {
+
+const App: React.FC = () => {
   return (
-    <div className="container">
-      <ExperienceBar/>
-    </div>
-  ); 
+    <>
+      <Routes/>
+      <GlobalStyle />
+  </>
+  );
 }
 
 export default App;

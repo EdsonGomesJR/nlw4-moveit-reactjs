@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
+
 * {
   margin: 0;
   padding: 0;
@@ -52,42 +56,10 @@ a {
   text-decoration: none;
 }
 
-.container {
-  height: 100vh;
-  max-width: 992px;
-  margin: 0 auto;
-  padding: 2.5rem 2rem;
 
-  display: flex;
-  flex-direction: column;
-}
 
-.experience-bar {
-  display: flex;
-  align-items: center;
-}
 
-.experience-bar span {
-  font-size: 1rem;
-}
 
-.experience-bar > div {
-  flex: 1;
-  height: 4px;
-  border-radius: 4px;
-  background: var(--gray-line);
-  margin: 0 1.5rem;
-  position: relative;
-}
 
-.experience-bar > div > div {
-  height: 4px;
-  border-radius: 4px;
-  background: var(--green);
-}
 
-span.current-experience {
-  position: absolute;
-  top: 12px;
-  transform: translateX(-50%);
-}
+`;
